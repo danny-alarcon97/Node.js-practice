@@ -1,3 +1,21 @@
-const fs = require("fs");
+// SUPER HEROES
+const superheroes = require("superheroes");
 
-fs.copyFileSync("file1.txt", "file2.txt");
+superheroes.all;
+//=> ['3-D Man', 'A-Bomb', …]
+
+var mySuperheroName = superheroes.random();
+//=> 'Spider-Ham'
+
+console.log(mySuperheroName);
+
+// SUPER VILLAINS
+const supervillains = require("supervillains");
+
+supervillains.all;
+//=> ['Abattoir', 'Able Crown', …]
+
+var mySupervillainName = supervillains.random();
+//=> 'Mud Pack'
+
+console.log(mySupervillainName);
